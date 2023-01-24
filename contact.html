@@ -8,7 +8,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/01132b4b8d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    
 </head>
+<style>
+    label {
+    color: #333;
+}
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 80%;
+    margin-left: 3px;
+    }
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px;
+
+}
+</style>
 <body>
     
     <!--Navigation Bar -->
@@ -47,11 +66,101 @@
 
       <!-- home section -->
     <div class="container">
-        <div class="row" style="height: 550px; padding-top: 5%;">
+        <div class="row" style=" padding-top: 5%;">
             <div class="col-sm">
-                <img src="./assets/sven-d-a4S6KUuLeoM-unsplash.jpg" alt="" style="width: 100%;">
+               
+                    <div class=" text-center mt-5 ">
+            
+                        <h1 > Contact Form</h1>
+                            
+                        
+                    </div>
+            
+                
+                <div class="row ">
+                  <div class="col-lg-7 mx-auto">
+                    <div class="card mt-2 mx-auto p-4 bg-light">
+                        <div class="card-body bg-light">
+                   
+                        <div class = "container">
+                                         <form id="contact-form" role="form">
+            
+                        
+            
+                        <div class="controls">
+            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Firstname *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Lastname *</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                                                        </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_need">Please specify your need *</label>
+                                        <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                            <option value="" selected disabled>--Select Your Issue--</option>
+                                            <option >Travels Related</option>
+                                            <option >Electrical Related</option>
+                                        </select>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Type of work" rows="4" required="required" data-error="Please, leave us a message."></textarea
+                                            >
+                                        </div>
+            
+                                    </div>
+            
+            
+                                <div class="col-md-12">
+                                    
+                                    <input type="submit" class="btn btn-send  pt-2 btn-block
+                                        " value="Send Message" style="background-color: #733C3C; color: white;">
+                                
+                            </div>
+                      
+                            </div>
+            
+            
+                    </div>
+                     </form>
+                    </div>
+                        </div>
+            
+            
+                </div>
+                    <!-- /.8 -->
+            
+                </div>
+                <!-- /.row-->
+            
             </div>
-            <div class="col-sm">
+            </div>
+        
+            <!-- <div class="col-sm">
                 <div class="h-100 d-flex flex-column justify-content-center" >
                     <h2 class="text-left"> <b> The Most Reliable Travels Services in Pune </b></h2>
                     <p class="text-left"> 
@@ -59,27 +168,9 @@
                     </p>
                     <a class="text-left" href="travels.html">explore</a>
                 </div>
-            </div>
+            </div> -->
         </div>
-
     </div>
-    <div class="breaker"></div>
-    <div class="container">
-        <div class="row" style="height: 550px; ">
-        <div class="col-sm">
-            <img src="./assets/junior-ferreira-7esRPTt38nI-unsplash.jpg" alt="" style="width: 100%;">
-        </div>
-        <div class="col-sm">
-            <div class="h-100 d-flex flex-column justify-content-center" >
-            <h2 class="text-left"> <b> The Most Reliable Electrical Services in Pune </b></h2>
-            <p class="text-left">All Electrical services will be provided in reliable costs</p>
-            <a class="text-left" href="electrical.html">explore</a>
-        </div>
-        </div>
-        </div>
-    
-    </div>
-
     <footer class="page-footer font-small blue pt-4">
         <section style="background-color: #733C3C; color: white;">
         <!-- Footer Links -->
@@ -95,6 +186,7 @@
               <h2>Pranali</h2>
               <h2>Electrical and Travels</h2>
               <p>At.,Post. Devachi Uruli, Tal.Haveli, <br> Dist-Pune -412308</p>
+              <!-- <img src="../../../assets/download.png" alt="" srcset=""> -->
             </div>
             <!-- Grid column -->
       
@@ -153,9 +245,7 @@
                   <a href="#!"><i class="fa-brands fa-instagram"></i> &nbsp;<i class="fa-brands fa-twitter"></i>&nbsp; <i class="fa-brands fa-facebook"></i></a>
                 </li>
               </ul>
-      
             </div>
-      
           </div>
           <!-- Grid row -->
       
